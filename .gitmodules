@@ -1,0 +1,6 @@
+[submodule "vendor/mysql"]
+	path = vendor/mysql
+	url = https://github.com/manyuanrong/deno_mysql
+[submodule "vendor/orm"]
+	path = vendor/orm
+	url = https://github.com/manyuanrong/dso
