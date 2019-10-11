@@ -1,5 +1,5 @@
 import { Router } from '../vendor/oak/mod.ts'
-import { BookController } from './controller/book.ts'
+import { BookController } from './app/controller/book.ts'
 
 const router = new Router()
 router.get('/', context => {
