@@ -1,5 +1,6 @@
 ####################################################
 DENO_VERSION = "0.20.0"
+SERVICE_VERSION = "0.0.1"
 
 install:
 	@git submodule sync --recursive
@@ -12,3 +13,7 @@ baseImage:
 	@docker build -t alfierichou/deno -f base.dockerfile .
 	@docker tag alfierichou/deno:latest alfierichou/deno:$(DENO_VERSION)
 	@docker push alfierichou/deno
+
+serviceImage:
+	@docker build -t alfierichou/deno-mvc:$(SERVICE_VERSION) .
+	@docker push alfierichou/deno-mvc

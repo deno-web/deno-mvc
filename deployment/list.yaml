@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: List
+items:
+- apiVersion: v1
+  kind: Service
+  metadata:
+    name: list-service-deno-mvc
+  spec:
+    ports:
+    - protocol: TCP
+      port: 8000
+    selector:
+      app: list-deployment-deno-mvc
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: list-deployment-deno-mvc
+    labels:
+      app: list-deployment-deno-mvc
+  spec:
+    replicas: 2
+    selector:
+      matchLabels:
+        app: list-deployment-deno-mvc
+    template:
+      metadata:
+        labels:
+          app: list-deployment-deno-mvc
+      spec:
+        containers:
+          - name: deno-mvc
+            image: alfierichou/deno-mvc:0.0.1
+            ports:
+              containerPort: 8000
