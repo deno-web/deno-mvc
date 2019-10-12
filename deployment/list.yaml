@@ -31,4 +31,4 @@ items:
           - name: deno-mvc
             image: alfierichou/deno-mvc:0.0.1
             ports:
-              containerPort: 8000
+              - containerPort: 8000
