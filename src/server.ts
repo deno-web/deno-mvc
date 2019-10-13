@@ -28,7 +28,7 @@ export class Server implements InitService {
   }
 
   public async start(port: number): Promise<void> {
-    console.log('Server ready at http://127.0.0.1:8000')
-    await this.app.listen(`127.0.0.1:${port}`)
+    console.log('listening on port 8000')
+    await this.app.listen(`0.0.0.0:${port}`)
   }
 }
