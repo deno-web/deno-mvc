@@ -1,4 +1,4 @@
-FROM aregistry.cn-hangzhou.aliyuncs.com/lfierichou/deno:0.20.0
+FROM registry.cn-hangzhou.aliyuncs.com/alfierichou/deno:0.20.0
 
 EXPOSE 8000
 
