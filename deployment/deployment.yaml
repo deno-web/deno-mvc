@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deno-mvc-dep
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: deno-mvc-deployment
+  template:
+    metadata:
+      labels:
+        app: deno-mvc-deployment
+    spec:
+      containers:
+      - name: deno-mvc-pod
+        image: registry.cn-hangzhou.aliyuncs.com/alfierichou/deno-mvc:0.0.1
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 8000
+        command: [ "echo", "SUCCESS" ]
