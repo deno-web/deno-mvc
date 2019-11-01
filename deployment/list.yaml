@@ -6,9 +6,12 @@ items:
   metadata:
     name: list-service-deno-mvc
   spec:
+    type: NodePort
     ports:
-    - protocol: TCP
-      port: 8000
+    - port: 8000
+      nodePort: 30390
+      protocol: TCP
+      targetPort: 8000
     selector:
       app: list-deployment-deno-mvc
 - apiVersion: apps/v1
@@ -31,4 +34,4 @@ items:
           - name: deno-mvc
             image: alfierichou/deno-mvc:0.0.1
             ports:
-              - containerPort: 8000
+            - containerPort: 8000

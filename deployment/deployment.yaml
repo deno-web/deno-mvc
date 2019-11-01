@@ -17,5 +17,5 @@ spec:
         image: registry.cn-hangzhou.aliyuncs.com/alfierichou/deno-mvc:0.0.1
         imagePullPolicy: Always
         ports:
-          - containerPort: 8000
+        - containerPort: 8000
         command: [ "echo", "SUCCESS" ]
