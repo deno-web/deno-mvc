@@ -6,6 +6,9 @@ install:
 	@git submodule sync --recursive
 	@git submodule update --init --recursive
 
+format:
+	@deno --allow-read --allow-write https://deno.land/std/prettier/main.ts
+
 start:
 	@deno --allow-net mod.ts
 

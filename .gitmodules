@@ -10,3 +10,6 @@
 [submodule "vendor/oak"]
 	path = vendor/oak
 	url = https://github.com/oakserver/oak
+[submodule "vendor/sqlBuilder"]
+	path = vendor/sqlBuilder
+	url = https://github.com/manyuanrong/sql-builder
