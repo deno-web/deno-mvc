@@ -1,15 +1,6 @@
-[submodule "vendor/mysql"]
-	path = vendor/mysql
-	url = https://github.com/manyuanrong/deno_mysql
-[submodule "vendor/orm"]
-	path = vendor/orm
-	url = https://github.com/manyuanrong/dso
 [submodule "vendor/redis"]
 	path = vendor/redis
 	url = https://github.com/keroxp/deno-redis
 [submodule "vendor/oak"]
 	path = vendor/oak
 	url = https://github.com/oakserver/oak
-[submodule "vendor/sqlBuilder"]
-	path = vendor/sqlBuilder
-	url = https://github.com/manyuanrong/sql-builder
