@@ -1,6 +1,0 @@
-[submodule "vendor/redis"]
-	path = vendor/redis
-	url = https://github.com/keroxp/deno-redis
-[submodule "vendor/oak"]
-	path = vendor/oak
-	url = https://github.com/oakserver/oak

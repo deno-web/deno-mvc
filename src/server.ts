@@ -1,4 +1,4 @@
-import { Application, Context } from '../vendor/oak/mod.ts'
+import { Application, Context } from 'https://deno.land/x/oak/mod.ts'
 import router from './router.ts'
 
 interface InitService {
@@ -28,7 +28,7 @@ export class Server implements InitService {
   }
 
   public async start(port: number): Promise<void> {
-    console.log('listening on port 8000')
+    console.log(`listening on port ${port}`)
     await this.app.listen(`0.0.0.0:${port}`)
   }
 }
